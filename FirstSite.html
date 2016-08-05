@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрации</title>
+</head>
+<body>
+<h1>Регистрация</h1>
+
+<form action="" method="post" enctype = "multipart/form-data">
+    <label>Ваш логин (email):<br>
+        <input type="text" name="login">
+    </label>
+    <br>
+    <label>
+        Пароль:<br>
+        <input type="password" name="password">
+    </label>
+    <br>
+    Ваш пол:
+    <input type = "radio" name = "pol" value = "m"> Мужской
+    <input type = "radio" name = "pol" value = "f" checked> Женский<br>
+    Месяц и год рождения:<br>
+    <select name = "month">
+        <option value = "1">Январь</option>
+        <option value = "2">Февраль</option>
+        <option value = "3">Март</option>
+    </select>
+    <select name = "year">
+        <option value = "1">1990</option>
+        <option value = "2">1991</option>
+        <option value = "3">1992</option>
+    </select>
+    <br>
+    Увлечения:
+    <br>
+    <select name = "tech" multiple>
+        <option>Спорт</option>
+        <option selected>Игры</option>
+        <option>Кино</option>
+        <option>Путешествия</option>
+    </select>
+    <br>
+
+    <label>
+        Информация о себе:<br>
+        <textarea rows="3"></textarea>
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" checked>
+        Подписаться на рассылку
+    </label>
+    <br>
+    Ваше фото:
+    <input type = "file" name = "avatar">
+    <br>
+    <input type="submit" value="Зарегистрироваться">
+</form>
+</body>
